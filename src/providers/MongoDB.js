@@ -2,7 +2,7 @@ const config = require("../../config");
 const mongoose = require("mongoose");
 const Int32 = require("mongoose-int32");
 
-const db = mongoose.createConnection(process.env.DB_URI, {
+const db = mongoose.createConnection("mongodb+srv://buh:<password>@cluster0.adekj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false
